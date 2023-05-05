@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Web Developer", "Illustrator", "UI/UX Designer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hey! I'm Jane`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hey! I'm Jane,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Illustrator", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Hi, my name is Jane Collazo and I'm a digital artist and content creator. I have a passion for creating beautiful and engaging digital art and content, and I'm always looking for new and exciting ways to express myself and share my work with others.</p>
                 
                   <button onClick={() => console.log('connect')}>Let’s Chat! <ArrowRightCircle size={25} /></button>
